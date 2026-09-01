@@ -11,19 +11,27 @@ export default function Home() {
           Welcome, client
         </h1>
         <p className="mb-8 text-base leading-relaxed text-zinc-300">
-          Your personal training journey starts here. Let’s make sure you’re
-          ready to train safely and effectively.
+          Your personal training journey starts here. Choose an option below to
+          get started.
         </p>
 
-        <Link
-          href="/parq"
-          className="flex w-full items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 text-base font-semibold text-zinc-950 shadow-lg shadow-emerald-500/20 transition hover:scale-[1.02] hover:bg-emerald-400 active:scale-[0.98]"
-        >
-          Start PAR-Q
-        </Link>
+        <nav className="flex flex-col gap-4">
+          <Link
+            href="/parq"
+            className="flex w-full items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 text-base font-semibold text-zinc-950 shadow-lg shadow-emerald-500/20 transition hover:scale-[1.02] hover:bg-emerald-400 active:scale-[0.98]"
+          >
+            Start PAR-Q
+          </Link>
+          <Link
+            href="/how-does-this-machine-work"
+            className="flex w-full items-center justify-center rounded-2xl bg-white/10 px-6 py-4 text-base font-semibold text-white ring-1 ring-white/10 transition hover:scale-[1.02] hover:bg-white/15 active:scale-[0.98]"
+          >
+            How does this machine work
+          </Link>
+        </nav>
 
         <p className="mt-6 text-center text-sm text-zinc-400">
-          Takes about 2 minutes. Your answers are kept private.
+          New content added regularly.
         </p>
       </div>
     </main>

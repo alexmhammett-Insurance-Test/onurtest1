@@ -24,3 +24,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes bench-press {
+  0%, 12% {
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, 100px);
+  }
+  60% {
+    transform: translate(-50%, 100px);
+  }
+  88%, 100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+.bench-press-bar {
+  animation: bench-press 3s ease-in-out infinite;
+}
